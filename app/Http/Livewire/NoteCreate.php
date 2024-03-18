@@ -25,7 +25,7 @@ class NoteCreate extends Component
         ]);
         $this->resetInput();
         
-        $this->emit('')
+        // $this->emit('')
     }
 
     private function resetInput()
