@@ -58,3 +58,6 @@ Route::middleware('auth')->group(function () {
 Route::view('dashboard', 'dashboard')
     ->middleware(['auth', 'verified'])
     ->name('dashboard');
+
+Route::view('note-create', 'note-create')
+    ->name('note-create'); 

@@ -16,20 +16,22 @@ class NoteCreate extends Component
         return view('livewire.note-create');
     }
 
-    public function create()
+    public function store()
     {
+        dd("jalan");
         $notes = Note::create([
             'title' => $this->title,
             'body' => $this->body,
             'deadline' => $this->deadline
         ]);
+        dd($notes);
         $this->resetInput();
         
-        // $this->emit('')
     }
 
     private function resetInput()
     {
+        dd("tae");
         $this->title = null;
         $this->body = null;
         $this->deadline = null;

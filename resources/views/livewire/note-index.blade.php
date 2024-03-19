@@ -27,7 +27,5 @@
                 @endforeach
             </tbody>
         </table>
-        
     @endif
 </div>
-<livewire:note-create>
